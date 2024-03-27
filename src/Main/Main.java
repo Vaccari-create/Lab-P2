@@ -17,8 +17,16 @@ public class Main {
             System.out.print("Enter column: ");
             int col = myObj.nextInt();
 
-            System.out.print("Changing: "+row+" - "+col);
+            System.out.println("Changing: "+row+" - "+col);
             map.change_cell(row,col);
+            map.display_on_out();
+
+            System.out.print("Enter row to swap: ");
+            int rowSwap = myObj.nextInt();
+
+            System.out.print("Enter column to swap: ");
+            int colSwap = myObj.nextInt();
+            map.swap(rowSwap,colSwap);
             map.display_on_out();
 
             System.out.print("Do you want to continue? [y/n]: ");
